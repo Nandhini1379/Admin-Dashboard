@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+<body >
+    <nav class="navbar navbar-expand navbar-light bg-light mb-5 shadow-sm">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="/logo.png" alt="Brand logo">
+                <span class="fw-bold">Kafene</span>
+            </a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a href="/orders.html" class="nav-link">Orders</a>
+                    <a href="/products.html" class="nav-link active text-success">Products</a>
+                    <a href="/users.html" class="nav-link">Users</a>
+                </div>
+            </div>
+            <button class="btn btn-dark" id="logOut"><i class="bi bi-box-arrow-right"></i> Logout</button>
+        </div>
+    </nav>
+    <!-- End of Nav -->
+
+    <div class="container-fluid px-4 mx-auto">
+        <div class="row">
+            <div class="col-1">
+                <h1>Products</h1>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-1">
+                <div class="conatiner-fluid d-flex flex-column">
+                    <p class="fw-bolder mb-3">Filters</p>
+                    <p class="mb-3">Count: <span id="countPlaceholder">blah</span></p>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="expiredFilter" checked="true">
+                        <label for="expiredFilter" class="form-check-label">Expired</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="lowStockFilter" checked="true">
+                        <label for="lowStockFilter" class="form-check-label">Low Stock</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="container-fluid" id="dataPane">
+                    <div class="row p-2 gy-3 align-items-center">
+                        <div class="col fw-bold">
+                            ID
+                        </div>
+                        <div class="col-4 fw-bold">
+                            Product Name
+                        </div>
+                        <div class="col-4 fw-bold">
+                            Product Brand
+                        </div>
+                        <div class="col fw-bold">
+                            Expiry Date
+                        </div>
+                        <div class="col fw-bold">
+                            Unit Price
+                        </div>
+                        <div class="col fw-bold">
+                            Stock
+                        </div>
+                    </div>
+
+                    <!-- start of dynamic contents -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./products.js"></script>
+
+</body>
+</html>
