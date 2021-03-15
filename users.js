@@ -1,6 +1,6 @@
 let url = "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users";
 
-if(localStorage.getItem("user-authenticated") === "false") {
+if(localStorage.getItem("user-authenticated") == null || localStorage.getItem("user-authenticated") === "false") {
     alert("Please login first")
     window.location = "/login.html";
 }
